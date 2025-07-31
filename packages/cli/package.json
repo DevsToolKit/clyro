@@ -1,0 +1,55 @@
+{
+  "name": "clyro",
+  "version": "0.1.0-beta.1",
+  "description": "clyro is a UI component installer & CLI toolkit",
+  "author": "Piyush",
+  "license": "MIT",
+  "homepage": "https://github.com/devsToolKit/clyro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devsToolKit/clyro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devsToolKit/clyro/issues"
+  },
+  "type": "module",
+  "bin": {
+    "clyro": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "ui-library",
+    "cli",
+    "tailwindcss",
+    "components",
+    "clyro"
+  ],
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "dotenv": "^17.2.0",
+    "execa": "^9.6.0",
+    "fast-glob": "^3.3.3",
+    "figlet": "^1.8.2",
+    "fs-extra": "^11.3.0",
+    "ora": "^8.2.0",
+    "prompts": "^2.4.2",
+    "tsconfig-paths": "^4.2.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.19.8",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
